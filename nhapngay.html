@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Nhap ngay: <input type="number" id="nhap"></div>
+    <div><button onclick = myfunction()>Try it</button></div>
+    <div><p id = demo></p></div>
+<script>
+    function myfunction()
+    {
+        var x = document.getElementById("nhap").value;
+        var ngay;
+        if(x>=2 && x<=8)
+            {
+                if(x==2)
+                {
+                    ngay = "Thu hai";
+                }
+                if(x==3)
+                {
+                    ngay = "Thu ba";
+                }
+                if(x==4)
+                {
+                    ngay = "Thu tu";
+                }
+                if(x==5)
+                {
+                    ngay = "Thu nam";
+                }
+                if(x==6)
+                {
+                    ngay = "Thu sau";
+                }
+                if(x==7)
+                {
+                    ngay = "Thu bay";
+                }
+                if(x==8)
+                {
+                    ngay = "Chu nhat";
+                }
+            }
+            else
+            {
+                ngay = "Vui long nhap so 2 den 8";
+            }
+            document.getElementById("demo").innerHTML = ngay;
+    }
+</script>
+</body>
+</html>
